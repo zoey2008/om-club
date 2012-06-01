@@ -1,4 +1,4 @@
-package org.springside.examples.miniweb.entity;
+package com.om.framework.entity;
 
 
 import javax.persistence.Access;
