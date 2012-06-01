@@ -9,24 +9,25 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import org.springside.examples.miniweb.entity.IdEntity;
+import com.om.framework.entity.IdEntity;
+
 
 @Entity
 @Table(name = "t_member_trade")
 public class MemberTrade extends IdEntity {
-	 @ManyToOne
-	 @JoinColumn(name="member_id")  
+	@ManyToOne
+	@JoinColumn(name = "member_id")
 	private Member member;
-	 @ManyToOne
-	 @JoinColumn(name="goods_id")  
+	@ManyToOne
+	@JoinColumn(name = "goods_id")
 	private Goods goods;
 	private int trade_size;
 	private int trade_amount;
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date trade_time;
 	private int trade_balance;
-	 @ManyToOne
-	 @JoinColumn(name="account_id")  
+	@ManyToOne
+	@JoinColumn(name = "account_id")
 	private Account account;
 
 	public Member getMember() {

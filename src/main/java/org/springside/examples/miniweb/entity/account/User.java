@@ -15,10 +15,10 @@ import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
-import org.springside.examples.miniweb.entity.IdEntity;
 import org.springside.modules.utils.Collections3;
 
 import com.google.common.collect.Lists;
+import com.om.framework.entity.IdEntity;
 
 /**
  * 用户.

@@ -16,9 +16,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
-import org.springside.examples.miniweb.entity.IdEntity;
 
 import com.google.common.collect.Lists;
+import com.om.framework.entity.IdEntity;
 
 /**
  * 权限组.

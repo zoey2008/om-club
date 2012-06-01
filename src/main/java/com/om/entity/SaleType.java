@@ -3,7 +3,8 @@ package com.om.entity;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-import org.springside.examples.miniweb.entity.IdEntity;
+import com.om.framework.entity.IdEntity;
+
 
 @Entity
 @Table(name = "t_sale_type")
