@@ -2,7 +2,8 @@ package com.om.portal.dao;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-import com.om.entity.Member;
+import com.om.entity.Goods;
 
-public interface MemberDao extends PagingAndSortingRepository<Member, Long> {
+public interface GoodsDao extends PagingAndSortingRepository<Goods, Long> {
+
 }

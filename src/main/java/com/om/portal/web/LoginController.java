@@ -19,12 +19,11 @@ import com.om.framework.session.HttpSessionHelp;
 import com.om.portal.service.HomeService;
 
 /**
- * LoginController负责打开登录页面(GET请求)和登录出错页面(POST请求)，
-
- * 真正登录的POST请求由Filter完成,
- * 
- * @author calvin
+ * 登录相关页和首页相关页在这里定义
+ * @author zoey
+ *
  */
+ 
 @Controller
 public class LoginController {
 	private static Logger logger = LoggerFactory.getLogger(LoginController.class);
@@ -32,11 +31,24 @@ public class LoginController {
 	@Autowired
 	private HomeService homeService;
 	
+	
+	/**
+	 * 登录页
+	 * @return
+	 */
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login() {
 		return "login";
 	}
 
+	/**
+	 * 登录表单请求
+	 * @param request
+	 * @param username
+	 * @param password
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String fail(HttpServletRequest request, String username, String password,Model model) {
 		//model.addAttribute(FormAuthenticationFilter.DEFAULT_USERNAME_PARAM, userName);
@@ -47,6 +59,10 @@ public class LoginController {
 		return "redirect:home";
 	}
 	
+	/**
+	 * 登录成功后的首页
+	 * @return
+	 */
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public String home() {
 		return "home";

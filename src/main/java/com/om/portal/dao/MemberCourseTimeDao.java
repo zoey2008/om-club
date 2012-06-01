@@ -4,6 +4,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 
 import com.om.entity.MemberCourseTime;
 
-public interface MemberCourseTimeDao  extends PagingAndSortingRepository<MemberCourseTime, Long> {
+public interface MemberCourseTimeDao extends
+		PagingAndSortingRepository<MemberCourseTime, Long> {
 
 }
